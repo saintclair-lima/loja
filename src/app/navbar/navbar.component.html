@@ -1,31 +1,10 @@
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
 
-  <br/>
-  <span class="radio_element">
-  <input type="radio" id="info" class="active"
-         name="navigationbar" value="info">
-  <label for="html">&#8505;</label>
-  </span>
 
-  <span class="radio_element">
-  <input type="radio" id="produtos"
-         name="navigationbar" value="produtos">
-         <label for="html">🔎</label>
-  </span>
-
-  <span class="radio_element">
-  <input type="radio" id="carrinho"
-         name="navigationbar" value="carrinho">
-         <label for="html">🛒</label>
-  </span>
-
-  <span class="radio_element">
-  <input type="radio" id="conta"
-         name="navigationbar" value="conta">
-         <label for="html">🧑</label>
-  </span>
+<div class="nav-bar">
+       <ul>
+       <li><a name="nav-bar-link" class="ativo" (click)="atualizaAtiva(this)" href="#info">Info</a></li>
+       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#itens">Items</a></li>
+       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#carrinho">Carrinho</a></li>
+       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#conta">Conta</a></li>
+       </ul>
 </div>
