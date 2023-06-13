@@ -2,9 +2,9 @@
 
 <div class="nav-bar">
        <ul>
-       <li><a name="nav-bar-link" class="ativo" (click)="atualizaAtiva(this)" href="#info">Info</a></li>
-       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#itens">Items</a></li>
-       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#carrinho">Carrinho</a></li>
-       <li><a name="nav-bar-link" (click)="atualizaAtiva(this)" href="#conta">Conta</a></li>
+       <li><a name="nav-bar-link" [class]="getEstadoLinkPorIdx(0)" (click)="setIdxLinkAtivo(0)" href="#info">Info</a></li>
+       <li><a name="nav-bar-link" [class]="getEstadoLinkPorIdx(1)" (click)="setIdxLinkAtivo(1)" href="#itens">Items</a></li>
+       <li><a name="nav-bar-link" [class]="getEstadoLinkPorIdx(2)" (click)="setIdxLinkAtivo(2)" href="#carrinho">Carrinho</a></li>
+       <li><a name="nav-bar-link" [class]="getEstadoLinkPorIdx(3)" (click)="setIdxLinkAtivo(3)" href="#conta">Conta</a></li>
        </ul>
 </div>

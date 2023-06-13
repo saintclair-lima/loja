@@ -6,12 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  atualizaAtiva(item: Element): void{
-    const listaLinks: Element[] = Array.from(document.getElementsByTagName('nav-bar-link'));
-    listaLinks.forEach((link: Element) => {
-      link.classList.remove('ativo');
-  });
+  private idxLinkAtivo: number = 0;
+  private estadoLinks: string[] = ["ativo",
+                                   "inativo",
+                                   "inativo",
+                                   "inativo"];
+  public getEstadoLinkPorIdx(idx:number): string {
+    let estado: string =(idx >= 0 && idx < 4) ? this.estadoLinks[idx] : "inativo";
+    return estado;
+  }
+
   
-  item.classList.add('ativo')
-  } 
+  public setIdxLinkAtivo(indice:number){
+    this.idxLinkAtivo = indice;
+    this.atualizarestadoLinks();
+  }
+  public getIdxLinkAtivo(): number{
+    return this.idxLinkAtivo;
+  }
+
+  private atualizarestadoLinks(){
+    this.estadoLinks= ["inativo","inativo","inativo","inativo"];
+    this.estadoLinks[this.idxLinkAtivo] = "ativo"
+  }
 }
