@@ -1,6 +1,6 @@
 <section style="padding:20px;margin-top:30px">
-    <app-painel-info></app-painel-info>
-    <app-painel-itens></app-painel-itens>
-    <app-painel-carrinho></app-painel-carrinho>
-    <app-painel-conta></app-painel-conta>
+    <app-painel-info *ngIf="idxLinkAtivoNavbar == 0"></app-painel-info>
+    <app-painel-itens *ngIf="idxLinkAtivoNavbar == 1"></app-painel-itens>
+    <app-painel-carrinho *ngIf="idxLinkAtivoNavbar == 2"></app-painel-carrinho>
+    <app-painel-conta *ngIf="idxLinkAtivoNavbar == 3"></app-painel-conta>
 </section>

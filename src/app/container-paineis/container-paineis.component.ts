@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-container-paineis',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./container-paineis.component.css']
 })
 export class ContainerPaineisComponent {
-
+  @Input() idxLinkAtivoNavbar: number = 0;
 }

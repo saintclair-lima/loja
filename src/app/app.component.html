@@ -1,2 +1,2 @@
-<app-navbar></app-navbar>
-<app-container-paineis></app-container-paineis>
+<app-navbar (itemDeEvento)="setIdxLinkAtivoNavbar($event)"></app-navbar>
+<app-container-paineis [idxLinkAtivoNavbar]="this.idxLinkAtivoNavbar"></app-container-paineis>
