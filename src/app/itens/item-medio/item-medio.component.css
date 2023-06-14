@@ -1,0 +1,28 @@
+img {
+    height: 50px;
+}
+
+.div_imagem{
+    padding: 5px;
+    float: left;
+}
+
+.div_container{
+    width: 300px;
+    float: left;
+    border:1px solid gray;
+}
+
+.titulo_preco_container{
+    position: relative;
+}
+
+.nome_prod, .preco_prod{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: small;
+}
+.desc_prod{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+ }

@@ -9,6 +9,9 @@ import { PainelInfoComponent } from './painel-info/painel-info.component';
 import { PainelItensComponent } from './painel-itens/painel-itens.component';
 import { PainelCarrinhoComponent } from './painel-carrinho/painel-carrinho.component';
 import { PainelContaComponent } from './painel-conta/painel-conta.component';
+import { ItemMedioComponent } from './itens/item-medio/item-medio.component';
+import { ItemGrandeComponent } from './itens/item-grande/item-grande.component';
+import { ItemPequenoComponent } from './itens/item-pequeno/item-pequeno.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PainelContaComponent } from './painel-conta/painel-conta.component';
     PainelInfoComponent,
     PainelItensComponent,
     PainelCarrinhoComponent,
-    PainelContaComponent
+    PainelContaComponent,
+    ItemMedioComponent,
+    ItemGrandeComponent,
+    ItemPequenoComponent
   ],
   imports: [
     BrowserModule,
