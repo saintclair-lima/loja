@@ -3,8 +3,13 @@ img {
 }
 
 .alinhada_direita {
-  padding-right:10px;
-  text-align:right;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.alinhada_esquerda{
+  padding-left: 10px;
+  text-align: left;
 }
 
 .fonte_pequena {

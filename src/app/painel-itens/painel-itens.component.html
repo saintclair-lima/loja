@@ -1,3 +1,11 @@
+<div>
+  <input type="text" placeholder="Digite o produto">
+  <button type="submit">Procurar</button>
+</div>
 
-<app-item-medio *ngFor="let item of mock"[idImagem]="item"></app-item-medio>
+<div>
+  <app-item-medio *ngFor="let item of mock"
+    [idImagem]="item">
+  </app-item-medio>
+</div>
 
