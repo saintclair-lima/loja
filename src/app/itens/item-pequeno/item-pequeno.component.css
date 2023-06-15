@@ -16,8 +16,7 @@ img {
 }
 
 .div_container{
-    width: 300px;
-    float: left;
+    /*float: left;*/
     border:1px solid gray;
 }
 
