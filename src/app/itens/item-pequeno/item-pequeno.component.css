@@ -6,6 +6,10 @@ img {
   padding-right:10px;
   text-align:right;
 }
+
+.fonte_pequena {
+  font-size: smaller;
+}
 .div_imagem{
     padding: 3px;
     float: left;
@@ -21,7 +25,7 @@ img {
     position: relative;
 }
 
-.nome_prod{
+.nome_prod, .preco_prod{
    font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
    font-size: small;
