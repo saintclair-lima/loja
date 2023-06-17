@@ -1,5 +1,6 @@
+import { DadosItem } from "./dados-item";
+
 export interface ItemCarrinho {
   dadosItem: DadosItem;
-  id: string;
   qtd: number;
 }

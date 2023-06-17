@@ -1,12 +1,13 @@
 <section>
-  <app-item-pequeno *ngFor="let item of mock"
-    [idImagem]="item">
+  <app-item-pequeno *ngFor="let item of this.carrinho.getItensCarrinhoComoArray()"
+    [dadosItem]="[item.dadosItem,
+                  carrinho.getQuantidadePorId(item.dadosItem.id)]">
   </app-item-pequeno>
 </section>
 
 <div class="div_container_total">
   <div class="div_total_rotulo">Valor Total</div>
-  <div class="div_total_valor">0,00</div>
+  <div class="div_total_valor">{{"this.carrinho.getValorTotal()"}}</div>
 </div>
 
 <button>Fechar Pedido</button>
