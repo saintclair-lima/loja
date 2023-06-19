@@ -2,6 +2,10 @@ img {
     height: 25px;
 }
 
+span.fonte_pequena{
+  padding: 10px;
+}
+
 .alinhada_direita {
   padding-right: 10px;
   text-align: right;

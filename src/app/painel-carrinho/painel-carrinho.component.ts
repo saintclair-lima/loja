@@ -29,6 +29,14 @@ export class PainelCarrinhoComponent {
               valorItem: 24.32,
               refImagem: '003'},
             qtd:4}
+    ],
+    ['004',{dadosItem:{id: '004',
+              nome: 'Rodo Grande',
+              descricaoCurta: 'Rodo grande, para uso interno e externo.',
+              descricaoLonga: 'Rodo grande, para uso interno e externo. Cabo de madeira.',
+              valorItem: 30.00,
+              refImagem: '004'},
+            qtd:4}
     ]]);
     carrinho = new Carrinho(this.mapa);
 }

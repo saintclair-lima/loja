@@ -17,12 +17,7 @@ export class Carrinho {
   }
 
   public getItensCarrinhoComoArray(): ItemCarrinho[]{
-    let listaValoresItensCarrinhoMap = Array.from(this._itensCarrinho.values());
-    let listaRetorno: ItemCarrinho[] = [];
-
-    for (let item of listaValoresItensCarrinhoMap){
-      listaRetorno.push((item) as ItemCarrinho);
-    }
+    const listaRetorno: ItemCarrinho[] = [...this._itensCarrinho.values()];
     return listaRetorno;
   }
 
@@ -30,7 +25,7 @@ export class Carrinho {
     let valorTotal: number = 0;
     let listaItensCarrinhoMap = this.getItensCarrinhoComoArray();
 
-    for (let item in (listaItensCarrinhoMap) as ItemCarrinho[]){
+    for (let item of (listaItensCarrinhoMap) as ItemCarrinho[]){
       let _itemCar = (item) as unknown as ItemCarrinho;
       valorTotal = valorTotal + (_itemCar.dadosItem.valorItem * _itemCar.qtd);
     }
