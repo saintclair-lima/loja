@@ -1,18 +1,18 @@
 <section>
     <div class="div_container">
-        <div class="div_imagem"><img src="../../assets/imgs/{{dadosItem[0].refImagem}}.jpg"/></div>
+        <div class="div_imagem"><img src="../../assets/imgs/{{dadosItemQtd[0].refImagem}}.jpg"/></div>
         <div class="info">
-            <div class="div_titulo"><span class="nome_prod">{{dadosItem[0].nome}} - </span><span class="preco_prod">{{dadosItem[0].valorItem}}</span></div>
+            <div class="div_titulo"><span class="nome_prod">{{dadosItemQtd[0].nome}} - </span><span class="preco_prod">{{dadosItemQtd[0].valorItem}}</span></div>
         </div>
         <div>
           <div class="alinhada_esquerda">
             <button class="fonte_pequena">🗑 </button>
             <button class="fonte_pequena">➖</button>
             <button class="fonte_pequena">➕</button>
-            <span class="fonte_pequena">{{dadosItem[1]}}</span>
+            <span class="fonte_pequena">🛒: {{dadosItemQtd[1]}}</span>
           </div>
           <div class="alinhada_direita">
-            <span class="fonte_pequena">{{dadosItem[0].valorItem * dadosItem[1]}}</span>
+            <span class="fonte_pequena">{{dadosItemQtd[0].valorItem * dadosItemQtd[1]}}</span>
           </div>
         </div>
     </div>

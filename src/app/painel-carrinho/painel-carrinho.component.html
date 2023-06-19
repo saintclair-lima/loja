@@ -1,6 +1,6 @@
 <section>
   <app-item-pequeno *ngFor="let item of this.carrinho.getItensCarrinhoComoArray()"
-    [dadosItem]="[item.dadosItem,
+    [dadosItemQtd]="[item.dadosItem,
                   carrinho.getQuantidadePorId(item.dadosItem.id)]">
   </app-item-pequeno>
 </section>

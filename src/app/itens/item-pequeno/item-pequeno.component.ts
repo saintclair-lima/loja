@@ -7,5 +7,5 @@ import { DadosItem } from 'src/app/modelos/dados-item';
   styleUrls: ['./item-pequeno.component.css']
 })
 export class ItemPequenoComponent {
-  @Input() dadosItem!: [DadosItem, number];
+  @Input() dadosItemQtd!: [DadosItem, number];
 }
